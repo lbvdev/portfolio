@@ -8,7 +8,7 @@ def index():
 
 @app.route('/utils/<path:filename>')
 def utils(filename):
-    return send_from_directory('static/utils', filename)
+    return send_from_directory('utils', filename)
 
 if __name__ == '__main__':
     app.run('0.0.0.0', port=5200, debug=True)
